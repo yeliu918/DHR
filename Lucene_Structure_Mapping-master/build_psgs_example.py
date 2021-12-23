@@ -2,11 +2,12 @@ import csv
 import json
 from Has_answer import _normalize, has_answer
 from fuzzywuzzy import process
-from dhr.utils.tokenizers import SimpleTokenizer
 import argparse
 from multiprocessing import Pool
 from tqdm import tqdm
 import sys
+sys.path.append("..")
+from dhr.utils.tokenizers import SimpleTokenizer
 
 csv.field_size_limit(sys.maxsize)
 import html

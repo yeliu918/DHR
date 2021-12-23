@@ -2,11 +2,13 @@ import csv
 import json
 import unicodedata
 import regex as re
-from dhr.utils.tokenizers import SimpleTokenizer
 import argparse
 from multiprocessing import Pool
 from tqdm import tqdm
 import sys
+sys.path.append("..")
+from dhr.utils.tokenizers import SimpleTokenizer
+
 csv.field_size_limit(sys.maxsize)
 def _normalize(text):
     return unicodedata.normalize("NFD", text)
