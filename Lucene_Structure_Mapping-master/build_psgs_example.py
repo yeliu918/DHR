@@ -2,7 +2,7 @@ import csv
 import json
 from Has_answer import _normalize, has_answer
 from fuzzywuzzy import process
-from Tokenizer import SimpleTokenizer
+from dhr.utils.tokenizers import SimpleTokenizer
 import argparse
 from multiprocessing import Pool
 from tqdm import tqdm

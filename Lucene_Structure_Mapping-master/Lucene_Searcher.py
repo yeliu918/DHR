@@ -1,6 +1,6 @@
 import unicodedata
 import regex as re
-from Tokenizer import SimpleTokenizer
+from dhr.utils.tokenizers import SimpleTokenizer
 import json
 import sys
 from tqdm import tqdm

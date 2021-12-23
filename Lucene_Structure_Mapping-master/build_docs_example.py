@@ -2,7 +2,7 @@ import csv
 import json
 import unicodedata
 import regex as re
-from Tokenizer import SimpleTokenizer
+from dhr.utils.tokenizers import SimpleTokenizer
 import argparse
 from multiprocessing import Pool
 from tqdm import tqdm
