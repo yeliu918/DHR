@@ -1,6 +1,5 @@
 import unicodedata
 import regex as re
-from Tokenizer import SimpleTokenizer
 import json
 import argparse
 from tqdm import tqdm
@@ -8,6 +7,8 @@ from multiprocessing import Pool
 from multiprocessing import Process, Manager
 import sys
 import csv
+sys.path.append("..")
+from dhr.utils.tokenizers import SimpleTokenizer
 
 csv.field_size_limit(sys.maxsize)
 
